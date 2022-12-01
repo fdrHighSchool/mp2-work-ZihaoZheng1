@@ -1,0 +1,44 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println(grader(88));//B+
+    System.out.println(grader(100));//A+
+    System.out.println(grader(65));//D
+    System.out.println(grader(34));//F
+    System.out.println(grader(60));//D-
+    System.out.println(grader(72));//C-
+  }// end main
+  public static String grader(int grades){
+    String result="";
+    if (grades>=60 || grades==100){
+      if (grades!=100){
+        if (grades>=90){
+          result+="A";
+        }// end if
+        else if (grades>=80){
+          result+="B";
+        }// end else if
+        else if (grades>=70){
+          result+="C";
+        }// end else if
+        else{
+          result+="D";
+        }// end else if
+      }// end if
+      if (grades!=100){
+        if (grades%10>=7){
+          result+="+";
+        }// end if
+        else if (grades%10<3){
+          result+="-";
+        }// end else if
+      }// end if
+      else {
+        return "A+";
+      }//end else
+      return result;
+    }// end if
+    else{
+     return "F";  
+    }//end else
+  }//end grader
+}// end class
