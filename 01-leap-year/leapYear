@@ -1,0 +1,28 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println(isLeapYear(2022));//false
+    System.out.println(isLeapYear(2024));//true
+    System.out.println(isLeapYear(1900));//false
+    System.out.println(isLeapYear(2000));//true
+  }// end main
+  public static boolean isLeapYear(int year){
+    boolean result;
+    if ((year%4)==0){
+      if ((year%100)==0){
+        if((year%400)==0){
+          result=true;
+        }// end line 9 if
+        else{
+          result=false;
+        }// end line 12 else
+      } // end line 8 if
+      else{
+        result=true;
+    }// end line 16 else
+  }// end  line 7 if
+    else{
+      result=false;
+    }// end line 20 else
+  return result;
+} // end isLeapYear
+}// end class
