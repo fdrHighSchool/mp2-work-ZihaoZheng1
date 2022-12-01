@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println(count(126));
+    System.out.println(count(0));
+    System.out.println(count(73));
+  }// end main
+  public static int count(int cents){
+    if (cents<25)
+      return 0;
+    String strCents = ""+cents;
+    strCents=strCents.substring(strCents.length()-2);
+    cents=Integer.parseInt(strCents);
+    return cents/25;
+      }// end count
+}// end class
