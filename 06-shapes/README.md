@@ -8,9 +8,11 @@
 000111222333444555666777888999
 ```
 ```
-  * 1.Create for loop and declare a int variable with 0(called num) in it, when num smaller or equal to 9, then do stuff, and num+1
-    2.Create another for loop in the first for loop, create a variable with 0 (called times), when times smaller than 3, then do stuff, and times+1
-    3.In the second for loop use print() to print the variable num
+  * for(declare a int variable with 0, called num, when num smaller or equal to 9 then do stuff, and num+1){
+      for(declare a variable with 0, called times, when times smaller than 3, then do stuff, and times+1){
+       print num
+     }
+    }
 ``` 
 
 
