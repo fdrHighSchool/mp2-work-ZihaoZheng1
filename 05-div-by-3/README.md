@@ -7,15 +7,16 @@ Think of the following method header:
 `public static boolean isPrime(int num)`
 
   * public static boolean isPrime(int num){
-  *  boolean check;
-  *  int div=2;
-  *  do{
-  *  if (num%div==0){
-  *  check=false;
-  *  }// end if
-  *  else{
-  *  check=true;
-  *  }// end else
-*} while(check!=false); // end do while
+     boolean check=true;
+     int div=2;
+     do{
+     if (num%div==0){
+     check=false;
+     }// end if
+     else{
+     check=true;
+     }// end else
+  }while(check!=false || div<=div/2); // end do while
      return check;
-*} //end isPrime method
+  }//end isPrime method
+  *
