@@ -6,17 +6,17 @@ Outline an algorithm to determine whether or not a number is prime.
 Think of the following method header:
 `public static boolean isPrime(int num)`
 
-  * public static boolean isPrime(int num){
-     boolean check=true;
-     int div=2;
-     do{
-     if (num%div==0){
-     check=false;
-     }// end if
-     else{
-     check=true;
-     }// end else
-  }while(check!=false || div<=div/2); // end do while
-     return check;
-  }//end isPrime method
-  *
+  * 1.public static boolean isPrime(int num){
+    2.boolean check=true;
+    3.int div=2;
+    4.do{
+    5.if (num%div==0){
+    6.check=false;
+    7.}// end if
+    8.else{
+    9.check=true;
+     10.}// end else
+  11.}while(check!=false || div<=div/2); // end do while
+     12.return check;
+  13.}//end isPrime method
+  
