@@ -8,7 +8,7 @@
     * 1.To creat a String variable(for example str) to store when convert the grade to string.    
       2.If the grade is not lower than 60 and not equal to 100, use substring() method to get the second digits of the grade, and use str to store it.
       3.Convert str back to int by parseInt() method.
-      4.And use if() method to check if str is greater or equal to 7(attach +), or is str is lower or equal to 2(attach -), otherwise(else) don't
+      4.And use if() method to check if str is greater or equal to 7(attach +), or is str is lower or equal to 2(attach -), otherwise(else) don't attach anything
     
 
 2. Discuss how you would make sure 100 is not misrepresented as an A-.
