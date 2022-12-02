@@ -1,0 +1,75 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("#1:");
+    System.out.println(conCat("abc","cat"));//abcat  #1
+    System.out.println(conCat("dog","cat"));//dogcat  #1
+    System.out.println();
+
+    System.out.println("#2:");
+    System.out.println(firstHalf("WooHoo"));//Woo #2
+    System.out.println(firstHalf("HelloThere"));//Hello #2
+    System.out.println();
+    
+    System.out.println("#3:");
+    System.out.println(repeatEnd("Hello", 3));//llollollo #3
+    System.out.println(repeatEnd("Hello", 2));//lolo #3
+    System.out.println();
+
+    System.out.println("#4:");
+    System.out.println(countHi("ABChi hi"));//2 #4
+    System.out.println(countHi("hihi"));//2 #4
+    System.out.println();
+    
+    System.out.println("#5:");
+    System.out.println(withoutString("Hello there", "llo"));//He there #5
+    System.out.println(withoutString("Hello there", "e"));//Hllo thr #5
+    System.out.println();
+  }// end main method
+  
+  // #1
+  public static String conCat(String a, String b){
+    if (!(a.substring(a.length()-1)).equals(b.substring(0,1))){
+      return a+b;
+    }
+    else{
+      return a+b.substring(1);
+    }
+  }// end conCat method
+
+  // #2
+  public static String firstHalf(String a){
+    return a.substring(0,(a.length()/2));
+  }// end firstHalf method
+
+  // #3
+  public static String repeatEnd(String a, int b){
+    String result="";
+    for(int times=0;times<b;times++){
+      result+=a.substring(a.length()-b);
+    }
+    return result;
+  }// end repeatEnd method
+
+  // #4
+  public static int countHi(String a){
+    int count=0;
+    while(a.indexOf("hi")!=-1){
+       count+=1;
+      if (a.indexOf("hi")==0){
+        a=a.substring(2);
+      }// end if
+      else{
+       a=a.substring(0,a.indexOf("hi"))+a.substring(a.indexOf("hi")+2);
+      }// end else
+    } //end while
+    return count;
+  }// end countHi method
+
+  // #5
+  public static String withoutString(String a, String b){
+        while (a.indexOf(b)!=-1){
+          a=a.substring(0,a.indexOf(b))+a.substring(a.indexOf(b)+b.length()); 
+      }// end while loop
+       return a;
+  }// end withoutString method
+}// end class
