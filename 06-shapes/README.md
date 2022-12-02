@@ -25,7 +25,9 @@
 999998888877777666665555544444333332222211111
 ```
 ```
-  * 1.Create for loop and declare a int variable with 9(called num) in it, when num larger to 0, then do stuff, and num-1
-    2.Create another for loop in the first for loop, create a variable with 0 (called times), when times smaller than 5, then do stuff, and times+1
-    3.In the second for loop use print() to print the variable num
+ * for(declare a int variable with 9, called num, when num larger than 0 then do stuff, and num-1){
+      for(declare a variable with 0, called times, when times smaller than 5, then do stuff, and times+1){
+       print num
+     }
+    }
 ```
