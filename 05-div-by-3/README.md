@@ -7,7 +7,7 @@ Think of the following method header:
 `public static boolean isPrime(int num)`
 
   * public static boolean isPrime(int num){
-     boolean check;
+  *  boolean check;
      int div=2;
      do{
      if (num%div==0){
