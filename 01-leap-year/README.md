@@ -44,10 +44,11 @@
       System.out.println("Mine, too!");
   }
   ```
-
+```
   * Scanner console = new Scanner(System.in);
     System.out.print("What is your favorite color? ");
     String name = console.nextln();
     if (name.equals("blue")) {
       System.out.println("Mine, too!");
 }
+```
