@@ -8,4 +8,4 @@
   String b = ""+a;
   b = b.substring(0,1);
   a = Integer.parseInt(b);//if convert back to integer needed
-```
+``` 
