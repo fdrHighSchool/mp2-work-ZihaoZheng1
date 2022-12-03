@@ -21,4 +21,4 @@
 | F  | F  |    F     |       T      |  T |  T |     T    |
 
 3. What does DeMorgan's state and how did you prove it for the case above?
-  * **YOUR WRITING HERE**
+  * Stuff that were originally different become the same under proper conditions（achieve a replacement effect）. For example: P || Q is not the same as P && Q, but !(P || Q) is the same as !P && !Q, since they have the same result on the same variables. 
