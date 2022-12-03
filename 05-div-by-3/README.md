@@ -7,6 +7,7 @@ Think of the following method header:
 `public static boolean isPrime(int num)`
 ```
   * Divide the given number by each number from 2 to half of the given number to check if there is an integer or the remainder is zero
+  for example:
   
     public static boolean isPrime(int num){
     boolean check=true;
