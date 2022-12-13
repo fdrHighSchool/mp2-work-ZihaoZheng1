@@ -1,0 +1,51 @@
+class Main {
+  public static void main(String[] args) {
+    square(5);
+    System.out.println();
+    rectangle(3,6);
+    System.out.println();
+    rightAngle(4);
+    System.out.println();
+    triangle(7);
+  }
+  public static void square(int s){
+    for (int row = 0; row < s; row++){
+       for (int col = 0; col < s; col++){
+        System.out.print("* ");
+       }// end for loop
+      System.out.println();
+    }// end for loop
+  }// end square method
+  
+  public static void rectangle(int l, int w){
+    for (int row = 0; row < l; row++){
+       for (int col = 0; col < w; col++){
+        System.out.print("* ");
+       }// end for loop
+      System.out.println();
+    }// end for loop
+  }// end rectangle method
+
+  public static void rightAngle(int s){
+    for (int row = 0; row < s; row++){
+       for (int col = 0; col <= row;col++){
+        System.out.print("* ");
+       }// end for loop
+      System.out.println();
+    }// end for loop
+  }// end rightAngle method
+
+  public static void triangle(int s){
+    int indent = s;
+    for (int row = 0; row < s; row++){
+       for(int space = 0;space<(indent-1);space++){
+        System.out.print(" ");
+       }// end for loop
+       for (int col = 0; col <= row;col++){
+        System.out.print("* ");
+       }// end for loop
+      indent-=1;
+      System.out.println();
+    }// end for loop
+  }// end triangle method
+}// end class

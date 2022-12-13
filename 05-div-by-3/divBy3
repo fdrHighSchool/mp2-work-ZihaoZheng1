@@ -1,0 +1,18 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println(divisibleBy(9));//9 and true
+    System.out.println(divisibleBy(201));//3 and true
+    System.out.println(divisibleBy(42553));//19 and false
+    System.out.println(divisibleBy(23454));//18 and true
+  }// end main method
+  public static boolean divisibleBy(int num){
+    String strNum = ""+num;
+    int status = 0;
+    for (int times=0;times<strNum.length();times++){
+      String add = strNum.substring(times,times+1);
+      status+=Integer.parseInt(add);
+    }// end for loop
+    System.out.println(status);
+    return status%3 == 0;
+  }// end divisibleBy method
+} // end class

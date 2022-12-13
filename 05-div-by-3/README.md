@@ -5,5 +5,21 @@
 Outline an algorithm to determine whether or not a number is prime.  
 Think of the following method header:
 `public static boolean isPrime(int num)`
-
-  * **YOUR WRITING HERE**
+```
+  * Divide the given number by each number from 2 to half of the given number to check if there is an integer or the remainder is zero
+  for example:
+  
+    public static boolean isPrime(int num){
+    boolean check=true;
+    int div=2;
+    do{
+    if (num%div==0){
+     check=false;
+    }// end if
+    else{
+     check=true;
+    }// end else
+    }while(check!=false || div<=div/2); // end do while
+     return check;
+    }//end isPrime method
+```
